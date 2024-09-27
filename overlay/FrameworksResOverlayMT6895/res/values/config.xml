@@ -172,9 +172,35 @@
          * The device must be provisioned with HDCP keys (for protected content).
     -->
     <bool name="config_enableWifiDisplay">true</bool>
+
     <!-- Flag indicating whether the surface flinger has limited
          alpha compositing functionality in hardware.  If set, the window
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">false</bool>
+
+    <!-- The default intensity level for alarm vibrations. See
+         Settings.System.ALARM_VIBRATION_INTENSITY more details on the constant values and
+         meanings. -->
+    <integer name="config_defaultAlarmVibrationIntensity">3</integer>
+
+    <!-- The default intensity level for haptic feedback. See
+         Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
+         meanings. -->
+    <integer name="config_defaultHapticFeedbackIntensity">3</integer>
+
+    <!-- The default intensity level for media vibrations. See
+         Settings.System.MEDIA_VIBRATION_INTENSITY more details on the constant values and
+         meanings. -->
+    <integer name="config_defaultMediaVibrationIntensity">3</integer>
+
+    <!-- The default intensity level for notification vibrations. See
+         Settings.System.NOTIFICATION_VIBRATION_INTENSITY more details on the constant values and
+         meanings. -->
+    <integer name="config_defaultNotificationVibrationIntensity">3</integer>
+
+    <!-- The default intensity level for ring vibrations. See
+         Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
+         meanings. -->
+    <integer name="config_defaultRingVibrationIntensity">3</integer>
 </resources>
