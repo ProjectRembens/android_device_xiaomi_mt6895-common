@@ -239,6 +239,13 @@ ro.surface_flinger.supports_background_blur=1
 #latch unsignaled buffer to improve display fluency
 debug.sf.latch_unsignaled=1
 
+# TEE
+ro.vendor.mtk_tee_gp_support=1
+ro.hardware.wechat=beanpod
+ro.hardware.kmsetkey=beanpod
+ro.hardware.gatekeeper=beanpod
+ro.vendor.mtk_microtrust_tee_support=1
+
 # UVC
 ro.usb.uvc.enabled=true
 
