@@ -54,7 +54,10 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
     'vendor/lib64/libteei_daemon_vfs.so': blob_fixup()
-        .add_needed('liblog.so')
+        .add_needed('liblog.so'),
+    ('vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service'): blob_fixup()
+        .replace_needed('android.hardware.vibrator-V1-ndk_platform.so', 'android.hardware.vibrator-V1-ndk.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
