@@ -58,6 +58,10 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service'): blob_fixup()
         .replace_needed('android.hardware.vibrator-V1-ndk_platform.so', 'android.hardware.vibrator-V1-ndk.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    ('vendor/lib64/hw/mt6895/vendor.mediatek.hardware.pq@2.15-impl.so', 'vendor/lib/hw/mt6895/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    ('vendor/lib64/librt_extamp_intf.so', 'vendor/lib/librt_extamp_intf.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
